@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Message">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Number"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/enter_number"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Enter Number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Message"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/enter_message"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Enter Number" />
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="messageClick"
+        android:id="@+id/message_button"
+        android:background="@color/colorAccent"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"/>
+
+
+</LinearLayout>
